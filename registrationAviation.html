@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diploma in Aviation Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <a href="landingPage.html">
+        <img src="logo%20aviation.png" alt="Avia Logo">
+    </a>
+
+    <ul>
+        <li><a href="landingPage.html">About Us</a></li>
+        <li><a href="registrationAviation.html">Registration</a></li>
+        <li><a href="landingPage.html">Course</a></li>
+        <li><a href="landingPage.html">Alumni</a></li>
+    </ul>
+</nav>
+
+<!-- Registration Form -->
+<section class="form-section">
+    <h1>Welcome to Aviation Registration</h1>
+    <p>Apply now for our Diploma in Aviation program and take off toward your dreams</p>
+
+    <form action="#" method="post" class="registration-form">
+        <label for="fullname">Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Contoh: Ahmad bin Ali" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com" required>
+
+        <label for="ic">IC Number</label>
+        <input type="text" id="ic" name="ic" placeholder="Contoh: 010203-10-1234" required>
+
+        <label for="phone">Telephone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Contoh: 012-3456789" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat anda di sini" required></textarea>
+
+        <label for="education">Highest Qualification:</label>
+        <select id="education" name="education" required>
+            <option value="">--Select--</option>
+            <option value="SPM">SPM</option>
+
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="program">Program</label>
+        <select id="program" name="program" required>
+            <option value="">-- Programmes --</option>
+            <option value="aviation">Diploma in Aviation</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<div id="popup" class="popup hidden">
+    <div class="popup-content">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 YEG Academy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="landingPage.html">Home</a>
+            <a href="landingPage.html">About</a>
+            <a href="landingPage.html">Programs</a>
+            <a href="registrationAviation.html">Register</a>
+            <a href="landingPage.html">Contact</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
